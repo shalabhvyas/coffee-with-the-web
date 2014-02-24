@@ -1,4 +1,4 @@
-html5-css3
+Coffee with the Web
 ==========
 
-Repository of all my learnings on HTML5-CSS3
+Repository of all my learnings and experiments with HTML5-CSS3.
