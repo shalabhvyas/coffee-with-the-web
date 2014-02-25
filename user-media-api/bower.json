@@ -1,0 +1,23 @@
+{
+  "name": "user-media-api",
+  "version": "0.0.1",
+  "homepage": "https://github.com/shalabhvyas/html5-css3/user-media-api",
+  "authors": [
+    "Shalabh Vyas(@shalabhvyas)"
+  ],
+  "description": "Using HTML5 User Media API for gesture recognition",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "normalize-css": "~3.0.0",
+    "bootstrap": "~3.1.1"
+  }
+}
