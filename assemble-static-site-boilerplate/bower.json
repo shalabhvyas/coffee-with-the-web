@@ -1,0 +1,28 @@
+{
+  "name": "assemble-static-site-boilerplate",
+  "version": "0.0.1",
+  "homepage": "https://github.com/shalabhvyas/html5-css3/assemble-static-site-boilerplate",
+  "authors": [
+    "Shalabh Vyas (@shalabhvyas)"
+  ],
+  "description": "Static Site Boilerplate using Assemble.io, Bower, SASS and Handlebars.",
+  "main": "Gruntfile.js",
+  "license": "MIT",
+  "dependencies" : {
+    "jquery" : "latest",
+    "normalize-css" : "latest"
+  },
+  "install" : {
+    "path" : {
+      "css": "assets/css/vendor",
+      "js": "assets/js/vendor"
+      }
+    },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

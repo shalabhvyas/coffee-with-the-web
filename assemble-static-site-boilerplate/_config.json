@@ -1,0 +1,16 @@
+{
+
+	"assets":"assets",
+	
+	"data":"data",
+
+	"templates": "templates",
+	"partials": "<%= config.templates %>/partials/*.hbs",
+    "layoutdir": "<%= config.templates %>/layouts",
+    "default_layout": "<%= config.layoutdir %>/default.hbs",
+
+    "build_path": "build",
+
+    "production":false
+
+}
