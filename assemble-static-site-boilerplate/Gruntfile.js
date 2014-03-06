@@ -11,10 +11,10 @@ module.exports = function(grunt) {
 
         flatten: true,
         production: "<%= config.production %>",
-        assets: '<%= config.assets %>',
+        assets: '<%= config.assets %>',        
 
         // Metadata        
-        data: ['<%= config.data %>/*.{json}'],
+        data: ['<%= config.data %>/*.json'],
 
         // Templates
         partials: '<%= config.partials %>',
@@ -51,6 +51,10 @@ module.exports = function(grunt) {
       }
     },
 
+    clean: {
+      build: ["<%= config.build_path %>"]
+    },
+
     watch: {
       styles: {
         files: ['<%= config.assets %>/scss/*.scss'],
@@ -74,10 +78,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('design', ['readme', 'sync']);
+  grunt.registerTask('build', ['clean','sass','jshint', 'assemble','copy']);
+  grunt.registerTask('design', ['clean','', 'sync']);
 
 };
