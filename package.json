@@ -1,0 +1,22 @@
+{
+  "name": "coffee-with-the-web",
+  "version": "0.0.0",
+  "description": "Repository of all my learnings and experiments with HTML5-CSS3.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "*",
+    "logfmt" : "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shalabhvyas/coffee-with-the-web.git"
+  },
+  "author": "Shalabh Vyas",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/shalabhvyas/coffee-with-the-web/issues"
+  }
+}
